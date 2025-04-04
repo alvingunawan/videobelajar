@@ -34,23 +34,24 @@
               <label for="gender" class="text-xs text-gray-500 lg:text-base">Jenis Kelamin <span class="text-ternary-default">*</span></label>
               <br />
               <select name="gender" id="gender" class="h-10 w-full border-2 border-gray-300 rounded-lg mb-4 cursor-pointer">
-                <option value="woman" class="cursor-pointer">Wanita</option>
-                <option value="man" class="cursor-pointer">Pria</option>
+                <option value="woman" class="cursor-pointer">&nbsp;Wanita</option>
+                <option value="man" class="cursor-pointer">&nbsp;Pria</option>
               </select>
 
               <label for="phoneNumberDetail" class="text-xs text-gray-500 lg:text-base">No. Hp <span class="text-ternary-default">*</span></label>
 
               <div class="flex mb-5 gap-2">
-                <div class="relative w-1/3">
-                  <select name="countryCode" id="countryCode" class="h-10 w-full text-center border-2 rounded-lg border-gray-300 cursor-pointer appearance-none bg-white pl-8">
-                    <option value="+62" data-flag="🇮🇩">🇮🇩 +62</option>
-                    <option value="+81" data-flag="🇯🇵">🇯🇵 +81</option>
-                    <option value="+1" data-flag="🇺🇸">🇺🇸 +1</option>
+                <div class="flex border-2 border-gray-300 rounded-lg overflow-hidden">
+                  <div class="flex items-center justify-center px-2 bg-gray-200 border-r border-gray-300">
+                    <img id="selectedFlag" src="icon/flag/id.png" alt="flag" class="w-2/3" />
+                  </div>
+                  <select name="countryCode" id="countryCode" class="text-center px-2 md:px-5 bg-white outline-none cursor-pointer">
+                    <option value="id">+62</option>
+                    <option value="jp">+81</option>
+                    <option value="us">+1</option>
                   </select>
-                  <span id="selectedFlag" class="absolute left-2 top-2 text-lg">🇮🇩</span>
                 </div>
-
-                <input type="number" name="phoneNumberDetail" id="phoneNumberDetail" class="h-10 w-2/3 border-2 rounded-lg border-gray-300 pl-2" placeholder="Masukkan nomor telepon" />
+                <input type="number" name="phoneNumberDetail" id="phoneNumberDetail" class="w-2/3 h-10 border-2 border-gray-300 rounded-lg pl-2 md:flex-grow appearance-none" />
               </div>
 
               <label for="password" class="text-xs text-gray-500 lg:text-base">Kata Sandi <span class="text-ternary-default">*</span></label>
@@ -75,8 +76,8 @@
 
               <p class="text-right text-xs text-gray-500 font-bold mb-6 cursor-pointer lg:text-base">Lupa Password?</p>
 
-              <button class="text-center w-full bg-primary-default text-white font-bold mb-4 py-2 rounded-lg cursor-pointer hover:opacity-90 ease-in-out duration-200">Masuk</button>
-              <button class="text-center w-full bg-primary-100 text-primary-default font-bold py-2 rounded-lg cursor-pointer">Daftar</button>
+              <button class="text-center w-full bg-primary-default text-white font-bold mb-4 py-2 rounded-lg cursor-pointer">Daftar</button>
+              <button type="button" id="loginBtn" class="text-center w-full bg-primary-100 text-primary-default font-bold py-2 rounded-lg cursor-pointer hover:opacity-90 ease-in-out duration-200">Masuk</button>
 
               <div class="flex items-center my-5">
                 <hr class="flex-grow border-gray-300" />
@@ -96,24 +97,22 @@
     <footer></footer>
   </body>
   <script>
-    // Automatic Flag
+    // Set Bendera pada Select Option
     const countrySelect = document.getElementById("countryCode");
     const selectedFlag = document.getElementById("selectedFlag");
 
-    // Mapping kode negara ke gambar bendera
+    // Mapping kode negara ke gambar bendera lokal
     const flagMap = {
-      id: "https://flagcdn.com/w40/id.png",
-      jp: "https://flagcdn.com/w40/jp.png",
-      us: "https://flagcdn.com/w40/us.png",
+      id: "icon/flag/id.png",
+      jp: "icon/flag/jp.png",
+      us: "icon/flag/us.png",
     };
 
     // Set bendera default
-    selectedFlag.style.backgroundImage = `url(${flagMap[countrySelect.value]})`;
+    selectedFlag.src = flagMap[countrySelect.value];
 
     countrySelect.addEventListener("change", function () {
-      const selectedOption = countrySelect.options[countrySelect.selectedIndex];
-      const countryCode = selectedOption.getAttribute("data-flag");
-      selectedFlag.style.backgroundImage = `url(${flagMap[countryCode]})`;
+      selectedFlag.src = flagMap[countrySelect.value];
     });
 
     // Password Input Interaction
@@ -144,6 +143,11 @@
         passwordInputConfirm.type = "password";
         eyeIconConfirm.src = "icon/hidepassword.png";
       }
+    });
+
+    // Login Button move to login page
+    document.getElementById("loginBtn").addEventListener("click", () => {
+      window.location.href = "index.html";
     });
   </script>
 </html>

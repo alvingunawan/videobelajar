@@ -40,7 +40,8 @@
               <p class="text-right text-xs text-gray-500 font-bold mb-6 cursor-pointer lg:text-base">Lupa Password?</p>
 
               <button class="text-center w-full bg-primary-default text-white font-bold mb-4 py-2 rounded-lg cursor-pointer hover:opacity-90 ease-in-out duration-200">Masuk</button>
-              <button class="text-center w-full bg-primary-100 text-primary-default font-bold py-2 rounded-lg cursor-pointer">Daftar</button>
+
+              <button id="registerBtn" type="button" class="text-center w-full bg-primary-100 text-primary-default font-bold py-2 rounded-lg cursor-pointer">Daftar</button>
 
               <div class="flex items-center my-5">
                 <hr class="flex-grow border-gray-300" />
@@ -72,6 +73,10 @@
         passwordInput.type = "password";
         eyeIcon.src = "icon/hidepassword.png";
       }
+    });
+    // Register Button move to regiter page
+    document.getElementById("registerBtn").addEventListener("click", () => {
+      window.location.href = "register.html";
     });
   </script>
 </html>
