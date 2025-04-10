@@ -20,7 +20,7 @@
           <img src="img/logo.png" class="w-36 h-10 lg:w-auto lg:h-auto" alt="logo" />
         </div>
         <div class="hidden lg:flex items-center space-x-8 py-7 pr-6 text-base">
-          <div class="text-gray">Kategori</div>
+          <div class="text-gray hover:cursor-pointer">Kategori</div>
           <div>
             <img src="img/avatarhome.png" alt="avatarhome" class="w-11" />
           </div>
@@ -36,13 +36,13 @@
         <div class="relative container bg-[url(img/heroimg.png)] bg-cover bg-center bg-no-repeat min-h-[300px] py-8 border-2 border-gray-300 rounded-md">
           <div class="absolute bg-black/87 inset-0"></div>
           <div class="relative font-bold text-center mx-2 mobileM:mx-1">
-            <h1 class="text-2xl text-white font-bold mb-3 tracking-wider leading-6 mobileM:px-10 mobileL:px-15 md:px-40 md:text-2xl lg:px-110 lg:text-4xl lg:leading-tight">
+            <h1 class="text-2xl text-white font-bold mb-3 tracking-wider leading-6 mobileM:px-10 mobileL:px-15 md:px-40 md:text-2xl lg:px-100 lg:pt-2 lg:text-4xl lg:leading-tight">
               Revolusi Pembelajaran: Temukan Ilmu Baru melalui Pratform Video Interaktif!
             </h1>
             <p class="text-white text-xs mb-5 tracking-wider mobileM:px-10 mobileL:px-15 md:px-40 lg:px-70 lg:text-base">
               Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga dapat berpartisipasi dalam latihan interaktif yang akan meningkatkan pemahaman Anda.
             </p>
-            <button class="bg-primary-default text-white rounded-lg text-xs px-1 py-3 mx-1 mobileL:px-5">Temukan Video Course untuk dipelajari!</button>
+            <button class="bg-primary-default text-white rounded-lg text-xs px-1 py-3 mx-1 mobileL:px-5 md:text-base hover:cursor-pointer hover:bg-primary-default/80 ease-in-out duration-200">Temukan Video Course untuk dipelajari!</button>
           </div>
         </div>
       </section>
@@ -55,25 +55,26 @@
             <p class="text-gray text-xs leading-snug">Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</p>
           </div>
           <div id="tabsGroup" class="flex flex-row gap-6 overflow-x-auto whitespace-nowrap mb-4 pb-3">
-            <div>Semua Kelas</div>
-            <div>Pemasaran</div>
-            <div>Desain</div>
-            <div>Pengembangan Diri</div>
-            <div>Bisnis</div>
+            <div class="hover:cursor-pointer text-ternary-default font-bold">Semua Kelas</div>
+            <div class="hover:cursor-pointer text-gray hover:text-ternary-default duration-200 ease-in-out">Pemasaran</div>
+            <div class="hover:cursor-pointer text-gray hover:text-ternary-default duration-200 ease-in-out">Desain</div>
+            <div class="hover:cursor-pointer text-gray hover:text-ternary-default duration-200 ease-in-out">Pengembangan Diri</div>
+            <div class="hover:cursor-pointer text-gray hover:text-ternary-default duration-200 ease-in-out">Bisnis</div>
           </div>
-          <div id="cardContainer" class="md:grid grid-cols-3 gap-5">
+          <div id="cardContainer" class="gap-5 md:grid md:grid-cols-2 lg:grid-cols-3 lg:ml-5">
             <!-- Card 1 -->
-            <div id="cardGroup">
-              <div id="cardComponent" class="bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5">
-                <div id="imgCardUpperSection" class="flex gap-3 pb-2">
-                  <div id="imgCardSection" class="pt-1.5 w-1/3">
-                    <img src="img/cardgroup/1.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg" />
+            <div class="cardGroup">
+              <div class="cardComponent bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5 lg:w-[80%]">
+                <div class="imgCardUpperSection flex gap-3 pb-2 lg:flex-col lg:gap-1.5">
+                  <div class="imgCardSection pt-1.5 w-1/3 lg:w-full lg:pt-0">
+                    <img src="img/cardgroup/1.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg lg:w-[95%] lg:h-35" />
                   </div>
-                  <div id="textCardSection" class="w-2/3">
-                    <p class="font-bold text-base pb-1">Big 4 Auditor Financial Analyst</p>
-                    <div id="innerTextCardSection" class="flex gap-1">
+                  <div class="textCardSection w-2/3 lg:w-full">
+                    <p class="font-bold text-base pb-1 lg:text-lg">Big 4 Auditor Financial Analyst</p>
+                    <p class="hidden lg:flex lg:mb-2">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik</p>
+                    <div class="innerTextCardSection flex gap-1">
                       <img src="img/cardgroup/avatar/1.png" alt="avatar1" class="w-9 h-9 rounded-lg" />
-                      <div id="innerTextCardSectionName">
+                      <div class="innerTextCardSectionName">
                         <p>Jenna Ortega</p>
                         <p class="text-xs">Senior Accountant</p>
                       </div>
@@ -93,24 +94,25 @@
                       </div>
                     </div>
                     <div id="innerRightPriceText">
-                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight">Rp 300K</span>
+                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight lg:pr-6">Rp 300K</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Card 2 -->
-            <div id="cardGroup">
-              <div id="cardComponent" class="bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5">
-                <div id="imgCardUpperSection" class="flex gap-3 pb-2">
-                  <div id="imgCardSection" class="pt-1.5 w-1/3">
-                    <img src="img/cardgroup/2.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg" />
+            <div class="cardGroup">
+              <div class="cardComponent bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5 lg:w-[80%]">
+                <div class="imgCardUpperSection flex gap-3 pb-2 lg:flex-col lg:gap-1.5">
+                  <div class="imgCardSection pt-1.5 w-1/3 lg:w-full lg:pt-0">
+                    <img src="img/cardgroup/2.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg lg:w-[95%] lg:h-35" />
                   </div>
-                  <div id="textCardSection" class="w-2/3">
-                    <p class="font-bold text-base pb-1">Big 4 Auditor Financial Analyst</p>
-                    <div id="innerTextCardSection" class="flex gap-1">
-                      <img src="img/cardgroup/avatar/2.png" alt="avatar1" class="w-9 h-9 rounded-lg" />
-                      <div id="innerTextCardSectionName">
+                  <div class="textCardSection w-2/3 lg:w-full">
+                    <p class="font-bold text-base pb-1 lg:text-lg">Big 4 Auditor Financial Analyst</p>
+                    <p class="hidden lg:flex lg:mb-2">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik</p>
+                    <div class="innerTextCardSection flex gap-1">
+                      <img src="img/cardgroup/avatar/2.png" alt="avatar2" class="w-9 h-9 rounded-lg" />
+                      <div class="innerTextCardSectionName">
                         <p>Jenna Ortega</p>
                         <p class="text-xs">Senior Accountant</p>
                       </div>
@@ -130,24 +132,26 @@
                       </div>
                     </div>
                     <div id="innerRightPriceText">
-                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight">Rp 300K</span>
+                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight lg:pr-6">Rp 300K</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- Card 3 -->
-            <div id="cardGroup">
-              <div id="cardComponent" class="bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5">
-                <div id="imgCardUpperSection" class="flex gap-3 pb-2">
-                  <div id="imgCardSection" class="pt-1.5 w-1/3">
-                    <img src="img/cardgroup/3.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg" />
+            <div class="cardGroup">
+              <div class="cardComponent bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5 lg:w-[80%]">
+                <div class="imgCardUpperSection flex gap-3 pb-2 lg:flex-col lg:gap-1.5">
+                  <div class="imgCardSection pt-1.5 w-1/3 lg:w-full lg:pt-0">
+                    <img src="img/cardgroup/3.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg lg:w-[95%] lg:h-35" />
                   </div>
-                  <div id="textCardSection" class="w-2/3">
-                    <p class="font-bold text-base pb-1">Big 4 Auditor Financial Analyst</p>
-                    <div id="innerTextCardSection" class="flex gap-1">
-                      <img src="img/cardgroup/avatar/3.png" alt="avatar1" class="w-9 h-9 rounded-lg" />
-                      <div id="innerTextCardSectionName">
+                  <div class="textCardSection w-2/3 lg:w-full">
+                    <p class="font-bold text-base pb-1 lg:text-lg">Big 4 Auditor Financial Analyst</p>
+                    <p class="hidden lg:flex lg:mb-2">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik</p>
+                    <div class="innerTextCardSection flex gap-1">
+                      <img src="img/cardgroup/avatar/3.png" alt="avatar3" class="w-9 h-9 rounded-lg" />
+                      <div class="innerTextCardSectionName">
                         <p>Jenna Ortega</p>
                         <p class="text-xs">Senior Accountant</p>
                       </div>
@@ -167,24 +171,26 @@
                       </div>
                     </div>
                     <div id="innerRightPriceText">
-                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight">Rp 300K</span>
+                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight lg:pr-6">Rp 300K</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- Card 4 -->
-            <div id="cardGroup">
-              <div id="cardComponent" class="bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5">
-                <div id="imgCardUpperSection" class="flex gap-3 pb-2">
-                  <div id="imgCardSection" class="pt-1.5 w-1/3">
-                    <img src="img/cardgroup/4.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg" />
+            <div class="cardGroup">
+              <div class="cardComponent bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5 lg:w-[80%]">
+                <div class="imgCardUpperSection flex gap-3 pb-2 lg:flex-col lg:gap-1.5">
+                  <div class="imgCardSection pt-1.5 w-1/3 lg:w-full lg:pt-0">
+                    <img src="img/cardgroup/4.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg lg:w-[95%] lg:h-35" />
                   </div>
-                  <div id="textCardSection" class="w-2/3">
-                    <p class="font-bold text-base pb-1">Big 4 Auditor Financial Analyst</p>
-                    <div id="innerTextCardSection" class="flex gap-1">
-                      <img src="img/cardgroup/avatar/4.png" alt="avatar1" class="w-9 h-9 rounded-lg" />
-                      <div id="innerTextCardSectionName">
+                  <div class="textCardSection w-2/3 lg:w-full">
+                    <p class="font-bold text-base pb-1 lg:text-lg">Big 4 Auditor Financial Analyst</p>
+                    <p class="hidden lg:flex lg:mb-2">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik</p>
+                    <div class="innerTextCardSection flex gap-1">
+                      <img src="img/cardgroup/avatar/4.png" alt="avatar4" class="w-9 h-9 rounded-lg" />
+                      <div class="innerTextCardSectionName">
                         <p>Jenna Ortega</p>
                         <p class="text-xs">Senior Accountant</p>
                       </div>
@@ -204,24 +210,26 @@
                       </div>
                     </div>
                     <div id="innerRightPriceText">
-                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight">Rp 300K</span>
+                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight lg:pr-6">Rp 300K</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- Card 5 -->
-            <div id="cardGroup">
-              <div id="cardComponent" class="bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5">
-                <div id="imgCardUpperSection" class="flex gap-3 pb-2">
-                  <div id="imgCardSection" class="pt-1.5 w-1/3">
-                    <img src="img/cardgroup/5.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg" />
+            <div class="cardGroup">
+              <div class="cardComponent bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5 lg:w-[80%]">
+                <div class="imgCardUpperSection flex gap-3 pb-2 lg:flex-col lg:gap-1.5">
+                  <div class="imgCardSection pt-1.5 w-1/3 lg:w-full lg:pt-0">
+                    <img src="img/cardgroup/5.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg lg:w-[95%] lg:h-35" />
                   </div>
-                  <div id="textCardSection" class="w-2/3">
-                    <p class="font-bold text-base pb-1">Big 4 Auditor Financial Analyst</p>
-                    <div id="innerTextCardSection" class="flex gap-1">
-                      <img src="img/cardgroup/avatar/5.png" alt="avatar1" class="w-9 h-9 rounded-lg" />
-                      <div id="innerTextCardSectionName">
+                  <div class="textCardSection w-2/3 lg:w-full">
+                    <p class="font-bold text-base pb-1 lg:text-lg">Big 4 Auditor Financial Analyst</p>
+                    <p class="hidden lg:flex lg:mb-2">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik</p>
+                    <div class="innerTextCardSection flex gap-1">
+                      <img src="img/cardgroup/avatar/5.png" alt="avatar5" class="w-9 h-9 rounded-lg" />
+                      <div class="innerTextCardSectionName">
                         <p>Jenna Ortega</p>
                         <p class="text-xs">Senior Accountant</p>
                       </div>
@@ -241,24 +249,26 @@
                       </div>
                     </div>
                     <div id="innerRightPriceText">
-                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight">Rp 300K</span>
+                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight lg:pr-6">Rp 300K</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- Card 6 -->
-            <div id="cardGroup">
-              <div id="cardComponent" class="bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5">
-                <div id="imgCardUpperSection" class="flex gap-3 pb-2">
-                  <div id="imgCardSection" class="pt-1.5 w-1/3">
-                    <img src="img/cardgroup/6.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg" />
+            <div class="cardGroup">
+              <div class="cardComponent bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5 lg:w-[80%]">
+                <div class="imgCardUpperSection flex gap-3 pb-2 lg:flex-col lg:gap-1.5">
+                  <div class="imgCardSection pt-1.5 w-1/3 lg:w-full lg:pt-0">
+                    <img src="img/cardgroup/6.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg lg:w-[95%] lg:h-35" />
                   </div>
-                  <div id="textCardSection" class="w-2/3">
-                    <p class="font-bold text-base pb-1">Big 4 Auditor Financial Analyst</p>
-                    <div id="innerTextCardSection" class="flex gap-1">
-                      <img src="img/cardgroup/avatar/6.png" alt="avatar1" class="w-9 h-9 rounded-lg" />
-                      <div id="innerTextCardSectionName">
+                  <div class="textCardSection w-2/3 lg:w-full">
+                    <p class="font-bold text-base pb-1 lg:text-lg">Big 4 Auditor Financial Analyst</p>
+                    <p class="hidden lg:flex lg:mb-2">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik</p>
+                    <div class="innerTextCardSection flex gap-1">
+                      <img src="img/cardgroup/avatar/6.png" alt="avatar6" class="w-9 h-9 rounded-lg" />
+                      <div class="innerTextCardSectionName">
                         <p>Jenna Ortega</p>
                         <p class="text-xs">Senior Accountant</p>
                       </div>
@@ -278,24 +288,26 @@
                       </div>
                     </div>
                     <div id="innerRightPriceText">
-                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight">Rp 300K</span>
+                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight lg:pr-6">Rp 300K</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- Card 7 -->
-            <div id="cardGroup">
-              <div id="cardComponent" class="bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5">
-                <div id="imgCardUpperSection" class="flex gap-3 pb-2">
-                  <div id="imgCardSection" class="pt-1.5 w-1/3">
-                    <img src="img/cardgroup/7.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg" />
+            <div class="cardGroup">
+              <div class="cardComponent bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5 lg:w-[80%]">
+                <div class="imgCardUpperSection flex gap-3 pb-2 lg:flex-col lg:gap-1.5">
+                  <div class="imgCardSection pt-1.5 w-1/3 lg:w-full lg:pt-0">
+                    <img src="img/cardgroup/7.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg lg:w-[95%] lg:h-35" />
                   </div>
-                  <div id="textCardSection" class="w-2/3">
-                    <p class="font-bold text-base pb-1">Big 4 Auditor Financial Analyst</p>
-                    <div id="innerTextCardSection" class="flex gap-1">
-                      <img src="img/cardgroup/avatar/7.png" alt="avatar1" class="w-9 h-9 rounded-lg" />
-                      <div id="innerTextCardSectionName">
+                  <div class="textCardSection w-2/3 lg:w-full">
+                    <p class="font-bold text-base pb-1 lg:text-lg">Big 4 Auditor Financial Analyst</p>
+                    <p class="hidden lg:flex lg:mb-2">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik</p>
+                    <div class="innerTextCardSection flex gap-1">
+                      <img src="img/cardgroup/avatar/7.png" alt="avatar7" class="w-9 h-9 rounded-lg" />
+                      <div class="innerTextCardSectionName">
                         <p>Jenna Ortega</p>
                         <p class="text-xs">Senior Accountant</p>
                       </div>
@@ -315,24 +327,26 @@
                       </div>
                     </div>
                     <div id="innerRightPriceText">
-                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight">Rp 300K</span>
+                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight lg:pr-6">Rp 300K</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- Card 8 -->
-            <div id="cardGroup">
-              <div id="cardComponent" class="bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5">
-                <div id="imgCardUpperSection" class="flex gap-3 pb-2">
-                  <div id="imgCardSection" class="pt-1.5 w-1/3">
-                    <img src="img/cardgroup/8.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg" />
+            <div class="cardGroup">
+              <div class="cardComponent bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5 lg:w-[80%]">
+                <div class="imgCardUpperSection flex gap-3 pb-2 lg:flex-col lg:gap-1.5">
+                  <div class="imgCardSection pt-1.5 w-1/3 lg:w-full lg:pt-0">
+                    <img src="img/cardgroup/8.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg lg:w-[95%] lg:h-35" />
                   </div>
-                  <div id="textCardSection" class="w-2/3">
-                    <p class="font-bold text-base pb-1">Big 4 Auditor Financial Analyst</p>
-                    <div id="innerTextCardSection" class="flex gap-1">
-                      <img src="img/cardgroup/avatar/8.png" alt="avatar1" class="w-9 h-9 rounded-lg" />
-                      <div id="innerTextCardSectionName">
+                  <div class="textCardSection w-2/3 lg:w-full">
+                    <p class="font-bold text-base pb-1 lg:text-lg">Big 4 Auditor Financial Analyst</p>
+                    <p class="hidden lg:flex lg:mb-2">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik</p>
+                    <div class="innerTextCardSection flex gap-1">
+                      <img src="img/cardgroup/avatar/8.png" alt="avatar8" class="w-9 h-9 rounded-lg" />
+                      <div class="innerTextCardSectionName">
                         <p>Jenna Ortega</p>
                         <p class="text-xs">Senior Accountant</p>
                       </div>
@@ -352,24 +366,26 @@
                       </div>
                     </div>
                     <div id="innerRightPriceText">
-                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight">Rp 300K</span>
+                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight lg:pr-6">Rp 300K</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- Card 9 -->
-            <div id="cardGroup">
-              <div id="cardComponent" class="bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5">
-                <div id="imgCardUpperSection" class="flex gap-3 pb-2">
-                  <div id="imgCardSection" class="pt-1.5 w-1/3">
-                    <img src="img/cardgroup/9.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg" />
+            <div class="cardGroup">
+              <div class="cardComponent bg-white rounded-lg w-full py-3 pl-4 border-2 border-gray-300 mb-5 lg:w-[80%]">
+                <div class="imgCardUpperSection flex gap-3 pb-2 lg:flex-col lg:gap-1.5">
+                  <div class="imgCardSection pt-1.5 w-1/3 lg:w-full lg:pt-0">
+                    <img src="img/cardgroup/9.png" alt="big4analysisimg" class="w-20.5 h-20.5 rounded-lg lg:w-[95%] lg:h-35" />
                   </div>
-                  <div id="textCardSection" class="w-2/3">
-                    <p class="font-bold text-base pb-1">Big 4 Auditor Financial Analyst</p>
-                    <div id="innerTextCardSection" class="flex gap-1">
-                      <img src="img/cardgroup/avatar/9.png" alt="avatar1" class="w-9 h-9 rounded-lg" />
-                      <div id="innerTextCardSectionName">
+                  <div class="textCardSection w-2/3 lg:w-full">
+                    <p class="font-bold text-base pb-1 lg:text-lg">Big 4 Auditor Financial Analyst</p>
+                    <p class="hidden lg:flex lg:mb-2">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik</p>
+                    <div class="innerTextCardSection flex gap-1">
+                      <img src="img/cardgroup/avatar/9.png" alt="avatar9" class="w-9 h-9 rounded-lg" />
+                      <div class="innerTextCardSectionName">
                         <p>Jenna Ortega</p>
                         <p class="text-xs">Senior Accountant</p>
                       </div>
@@ -389,7 +405,7 @@
                       </div>
                     </div>
                     <div id="innerRightPriceText">
-                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight">Rp 300K</span>
+                      <span class="pr-5 text-2xl text-primary-default font-bold tracking-tight lg:pr-6">Rp 300K</span>
                     </div>
                   </div>
                 </div>
