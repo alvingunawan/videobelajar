@@ -1406,6 +1406,11 @@
       padding-left: calc(var(--spacing) * 5);
     }
   }
+  .lg\:pl-7 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 7);
+    }
+  }
   .lg\:pl-8 {
     @media (width >= 64rem) {
       padding-left: calc(var(--spacing) * 8);
@@ -1419,6 +1424,11 @@
   .lg\:pl-10 {
     @media (width >= 64rem) {
       padding-left: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:pl-15 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 15);
     }
   }
   .lg\:text-3xl {
